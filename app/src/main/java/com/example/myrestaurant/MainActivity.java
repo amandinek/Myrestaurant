@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.example.myrestaurant.R;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -18,20 +20,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @BindView(R.id.findRestaurantButton) Button mFindRestaurantsButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
     @BindView(R.id.appNameTextView) TextView mAppNameTextView;
-//    GridView gridView;
-//    String[] letters = new String[] {
-//            "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-//        Typeface typeface = Typeface.createFromAsset(getAssets(), "font/delighter.otf");
         mFindRestaurantsButton.setOnClickListener(this);
-//
-//        gridView = (GridView) findViewById(R.id.baseGridView);
-//        gridView.setAdapter(new AlphabetAdapter(this, letters,typeface));
+
     }
 
     @Override
